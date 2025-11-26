@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif; /* letra escolhida */
+  background-color: rgb(240, 145, 128); /* cor fundo da página */
+  display: flex; /* alinha os elementos */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 100% da altura da tela */
+  margin: 0; /* remove margens do navegador */
+}
+
+.container {
+  background-color: white; /* cor fundo do container */
+  padding: 20px; /* espaço interno */
+  border-radius: 10px;
+  box-shadow: 0 0 10px;
+  text-align: center; /* alinha tudo ao centro */
+  max-width: 400px;
+  width: 100%;
+}
