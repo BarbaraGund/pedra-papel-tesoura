@@ -7,25 +7,47 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Pedra, Papel e Tesoura</h1>
+    <!-- VÍDEO DE FUNDO -->
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="video.mp4" type="video/mp4" />
+    </video>
 
+    <div class="overlay"></div>
+
+    <!-- TÍTULO GAME FORA DO CONTAINER -->
+    <h1 class="titulo-game">JOGO</h1>
+    <!-- CONTAINER -->
+    <div class="container">
+      <h1 style="display: none">GAME</h1>
+      <h1>Pedra, Papel e Tesoura</h1>
+      <!-- PLACAR -->
       <div class="placar">
         <div>Você: <span id="pontos-jogador">0</span></div>
         <div>Computador: <span id="pontos-computador">0</span></div>
       </div>
-
+      <!-- BOTÕES JOGADOR -->
       <div class="botoes">
-        <button onclick="jogar('pedra')">Pedra</button>
-        <button onclick="jogar ('papel')">Papel</button>
-        <button onclick="jogar('tesoura')">Tesoura</button>
+        <button onclick="jogar('Pedra')">Pedra</button>
+        <button onclick="jogar ('Papel')">Papel</button>
+        <button onclick="jogar('Tesoura')">Tesoura</button>
       </div>
-
+      <!-- RESULTADO DO JOGO -->
       <div class="resultado">
-        <div id="escolhas"></div>
-        <div id="mensagem">Escolha uma opção!</div>
-      </div>
+        <div class="caixas-escolhas">
+          <div class="caixa escolha-jogador">
+            Jogador:
+            <div id="escolha-jogador" class="texto-escolha">---</div>
+          </div>
 
+          <div class="caixa escolha-computador">
+            Computador:
+            <div id="escolha-computador" class="texto-escolha">---</div>
+          </div>
+        </div>
+        <!-- MENSAGEM DE VITÓRIA / DERROTA -->
+        <div id="mensagem"></div>
+      </div>
+      <!-- BOTÃO NOVO JOGO -->
       <button onclick="reiniciar()" class="reiniciar">Novo Jogo</button>
     </div>
     <script src="script.js"></script>
