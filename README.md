@@ -77,3 +77,25 @@ Responsividade aprimorada para mobile
 
 Animações nas caixas de escolha
 
+---
+
+🚀 Como Executar
+
+Baixe ou clone o repositório:
+
+git clone https://github.com/seu-usuario/seu-repositorio.git
+
+
+Certifique-se de que os arquivos abaixo estejam na mesma pasta:
+
+index.html
+
+style.css
+
+script.js
+
+video.mp4
+
+Abra o arquivo index.html em qualquer navegador.
+
+
